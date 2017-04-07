@@ -5,7 +5,7 @@ import (
 	"encoding/base64"
 	"github.com/18F/hmacauth"
 	"github.com/bmizerany/assert"
-	"github.com/himal-mandalia/oauth2_proxy/providers"
+	"github.com/ministryofjustice/oauth2_proxy/providers"
 	"io"
 	"io/ioutil"
 	"log"

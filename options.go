@@ -13,7 +13,7 @@ import (
 	"time"
 
 	"github.com/18F/hmacauth"
-	"github.com/himal-mandalia/oauth2_proxy/providers"
+	"github.com/ministryofjustice/oauth2_proxy/providers"
 )
 
 // Configuration Options that can be set by Command Line Flag, or Config File
