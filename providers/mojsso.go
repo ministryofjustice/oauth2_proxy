@@ -17,23 +17,22 @@ func NewMoJSSOProvider(p *ProviderData) *MoJSSOProvider {
 	p.ProviderName = "Ministry of Justice Sign On"
 	if p.LoginURL == nil || p.LoginURL.String() == "" {
 		p.LoginURL = &url.URL{
-			Scheme: "http",
-			Host:   "localhost:3000",
+			Scheme: "https",
+			Host:   "signon.service.justice.gov.uk",
 			Path:   "/oauth/authorize",
 		}
 	}
 	if p.RedeemURL == nil || p.RedeemURL.String() == "" {
 		p.RedeemURL = &url.URL{
-			Scheme: "http",
-			Host:   "localhost:3000",
+			Scheme: "https",
+			Host:   "signon.service.justice.gov.uk",
 			Path:   "/oauth/token",
 		}
 	}
-	// ValidationURL is the API Base URL
 	if p.ProfileURL == nil || p.ProfileURL.String() == "" {
 		p.ProfileURL = &url.URL{
-			Scheme: "http",
-			Host:   "localhost:3000",
+			Scheme: "https",
+			Host:   "signon.service.justice.gov.uk",
 			Path:   "/api/user_details",
 		}
 	}
